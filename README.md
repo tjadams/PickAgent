@@ -16,10 +16,12 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
   </tr>
   <tr>
     <td>
-      <video src=https://github.com/user-attachments/assets/ff3a84da-dc9b-498a-950f-5c54f58dd5c5 controls preload></video>
+      <p>Prompt: Pick up the salad dressing and place it in the basket</p>
+      <video src=https://github.com/user-attachments/assets/0672d86a-1397-45c8-bc89-9d7577fc1156 controls preload></video>    
     </td>
     <td>
-     <video src=https://github.com/user-attachments/assets/ff3a84da-dc9b-498a-950f-5c54f58dd5c5 controls preload></video>
+       <p>Prompt: Pick up the salad dressing and place it in the basket</p>
+      <video src=https://github.com/user-attachments/assets/0672d86a-1397-45c8-bc89-9d7577fc1156 controls preload></video>    
     </td>
   </tr>
 
