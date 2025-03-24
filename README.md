@@ -1,13 +1,22 @@
 # PickAgent: OpenVLA-powered Pick and Place Agent (Simulation)
 OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion parameters. Designed to empower robots with human-like perception and decision-making, it seamlessly integrates visual inputs and natural language instructions to perform diverse manipulation tasks. Trained on nearly a million episodes from the Open X-Embodiment dataset, OpenVLA sets a new standard for generalist robotic control. With a robust architecture combining SigLIP, DINOv2, and Llama 2 7B, it offers unparalleled adaptability and can be fine-tuned efficiently on consumer-grade GPUs, making advanced robotics more accessible than ever. [Project Page](https://openvla.github.io/)
 
-## 🎬 Demo 
-### 🌐 Gradio App
+## 🎬 1. Demo 
+### 🌐 Gradio App Screenshot
 <p align="center">
   <img src="https://github.com/user-attachments/assets/96928b5c-f683-4c75-b3ed-72b0f18dce92" alt="Screenshot" style="border: 10px solid black; border-radius: 5px;"/>
 </p>
 
-### 🎥 Videos 
+##### Watch in Youtube!
+<p align="left">
+<a href="https://youtu.be/hAWpsIuem10" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><img src="https://github.com/SkalskiP/SkalskiP/assets/26109316/a742823d-c158-407d-b30f-063a5d11b4e1" alt="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)" width="300px" align="left" /></a>
+<a href="https://youtu.be/hAWpsIuem10" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><strong>PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)</strong></a>
+<div><strong>Gradio Demo</strong></div>
+<br/>Learn how to use computer vision to analyze wait times and optimize processes. This tutorial covers object detection, tracking, and calculating time spent in designated zones. Use these techniques to improve customer experience in retail, traffic management, or other scenarios.</p>
+
+<br/>
+
+### 🎥 Video Results
 </div>
 <table class="center">
   <tr style="font-weight: bolder;text-align:center;">
@@ -39,8 +48,7 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
 </table>
 
 
-### Usage
-#### 🔧 Installation
+## 🔧 2. Installation
 
 ```bash
 # Create and activate conda environment
@@ -73,7 +81,12 @@ cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
 ```
 
-### Run Gradio Demo
+## 🚀 3. Inference
+### Gradio App
+Run the Gradio app for inference:
+```python
+   python3 gradio_demo.py
+```
 Here’s a summary of the Gradio inputs and outputs
 Inputs:
  - Task: Selects the task type for the simulation.
@@ -87,7 +100,13 @@ Outputs:
  - Simulation Video: Shows the simulation result video.
 
 
-### OpenVLA Models
+### Command Line Interface
+Run the python script for inference:
+```python
+   python3 inference.py --prompt="pick up the salad dressing and place it in the basket" --task="libero_object" --task_id=2 --image_resize=1024 --output_video="outputs/videos"
+```
+
+## 4. OpenVLA Models
 
 <div align="center">
 
@@ -98,4 +117,8 @@ Outputs:
 | OpenVLA - Finetuned Libero Object | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-object) |
 | OpenVLA - Finetuned Libero Goal | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-goal) |
 | OpenVLA - Finetuned Libero 10 | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-10) |
+
+
+## 🙏 5. Acknowledgement
+models are borrowed from [OpenVLA]((https://openvla.github.io/))
 
