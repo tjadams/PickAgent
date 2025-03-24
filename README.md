@@ -3,16 +3,16 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
 
 ## 🎬 Demo 
 ### 🌐 Gradio App
-![Screenshot from 2025-03-24 15-46-29](https://github.com/user-attachments/assets/e4b6a646-e209-40c0-bd3d-1a028d92cde7)
-
- 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96928b5c-f683-4c75-b3ed-72b0f18dce92" alt="Screenshot" style="border: 10px solid black; border-radius: 5px;"/>
+</p>
 
 ### 🎥 Videos 
 </div>
 <table class="center">
   <tr style="font-weight: bolder;text-align:center;">
-        <td width="50%"><b>Original video</b></td>
-        <td width="50%"><b>Lip-synced video</b></td>
+        <td width="50%"><b></b></td>
+        <td width="50%"><b></b></td>
   </tr>
   <tr>
     <td>
@@ -20,16 +20,27 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
       <video src=https://github.com/user-attachments/assets/0672d86a-1397-45c8-bc89-9d7577fc1156 controls preload></video>    
     </td>
     <td>
-       <p>Prompt: Pick up the salad dressing and place it in the basket</p>
-      <video src=https://github.com/user-attachments/assets/0672d86a-1397-45c8-bc89-9d7577fc1156 controls preload></video>    
+       <p>Prompt: Pick up the tomato sauce and place it in the baske.</p>
+      <video src=https://github.com/user-attachments/assets/56dd3c51-f049-4430-b523-da94d571a6f1 controls preload></video>    
     </td>
+  </tr>
+   <tr>
+    <td>
+      <p>Prompt: pick up the cream cheese and place it in the baske</p>
+      <video src=https://github.com/user-attachments/assets/e2bad8d3-ab93-44c2-80bd-1ebbb7db186d controls preload></video>    
+    </td>
+    <td>
+       <p>Prompt: Pick up the alphabet soup and place it in the bask.</p>
+      <video src=https://github.com/user-attachments/assets/aa1ba68b-c8e1-446b-b65e-2724ff72ed2f controls preload></video>    
+    </td>
+   
   </tr>
 
 </table>
 
 
 ### Usage
-#### Installation
+#### 🔧 Installation
 
 ```bash
 # Create and activate conda environment
@@ -62,7 +73,7 @@ cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
 ```
 
-### Gradio Demo
+### Run Gradio Demo
 Here’s a summary of the Gradio inputs and outputs
 Inputs:
  - Task: Selects the task type for the simulation.
