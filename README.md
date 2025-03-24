@@ -1,7 +1,10 @@
 # PickAgent: OpenVLA-powered Pick and Place Agent (Simulation)
 OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion parameters. Designed to empower robots with human-like perception and decision-making, it seamlessly integrates visual inputs and natural language instructions to perform diverse manipulation tasks. Trained on nearly a million episodes from the Open X-Embodiment dataset, OpenVLA sets a new standard for generalist robotic control. With a robust architecture combining SigLIP, DINOv2, and Llama 2 7B, it offers unparalleled adaptability and can be fine-tuned efficiently on consumer-grade GPUs, making advanced robotics more accessible than ever. [Project Page](https://openvla.github.io/)
 
-### App screenshot 
+### Demo 
+### Gradio App
+![Screenshot from 2025-03-24 15-46-29](https://github.com/user-attachments/assets/e4b6a646-e209-40c0-bd3d-1a028d92cde7)
+
 
 ### Video results
 
