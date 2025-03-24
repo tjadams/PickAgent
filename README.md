@@ -117,8 +117,8 @@ Run the python script for inference:
 | OpenVLA - Finetuned Libero Object | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-object) |
 | OpenVLA - Finetuned Libero Goal | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-goal) |
 | OpenVLA - Finetuned Libero 10 | [🤗 HuggingFace](https://huggingface.co/openvla/openvla-7b-finetuned-libero-10) |
-
+</div>
 
 ## 🙏 5. Acknowledgement
-models are borrowed from [OpenVLA]((https://openvla.github.io/))
+models are borrowed from [OpenVLA](https://openvla.github.io/)
 
