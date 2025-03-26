@@ -7,12 +7,12 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
   <img src="https://github.com/user-attachments/assets/96928b5c-f683-4c75-b3ed-72b0f18dce92" alt="Screenshot" style="border: 10px solid black; border-radius: 5px;"/>
 </p>
 
-##### Watch in Youtube!
+#### Watch in Youtube!
 <p align="left">
-<a href="https://youtu.be/hAWpsIuem10" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><img src="https://github.com/SkalskiP/SkalskiP/assets/26109316/a742823d-c158-407d-b30f-063a5d11b4e1" alt="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)" width="300px" align="left" /></a>
-<a href="https://youtu.be/hAWpsIuem10" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><strong>PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)</strong></a>
+<a href="https://www.youtube.com/watch?v=MvPEy6JLu94" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><img src="https://github.com/user-attachments/assets/2ee55647-412e-4522-b56b-2d4db4026c74" alt="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)" width="300px" align="left" /></a>
+<a href="https://youtu.be/watch?v=MvPEy6JLu94" title="PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)"><strong>PickAgent: OpenVLA-powered Pick and Place Agent(Simulation)</strong></a>
 <div><strong>Gradio Demo</strong></div>
-<br/>Learn how to use computer vision to analyze wait times and optimize processes. This tutorial covers object detection, tracking, and calculating time spent in designated zones. Use these techniques to improve customer experience in retail, traffic management, or other scenarios.</p>
+<br/>🚀 PickAgent is an AI-driven pick-and-place system powered by OpenVLA, showcasing advanced vision-language models in action. This simulation demonstrates how LLMs and computer vision work together for precise object manipulation.</p>
 
 <br/>
 
