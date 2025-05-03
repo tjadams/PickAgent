@@ -49,16 +49,17 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
 
 
 ## 🔧 2. Installation
+NOTE: One of the dependencies, SAPIEN, is not available for Mac OS. Please use Ubuntu or another supported OS.
 
 ```bash
 # Create and activate conda environment
-conda create -n openvla python=3.11 -y
-conda activate openvla
+conda create -n pickagent python=3.11 -y
+conda activate pickagent
 
 # Install PyTorch. Below is a sample command to do this, but you should check the following link
 # to find installation instructions that are specific to your compute platform:
 # https://pytorch.org/get-started/locally/
-conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia -y  # UPDATE ME!
+conda install pytorch torchvision torchaudio # pytorch-cuda=12.4 -c pytorch -c nvidia -y  # UPDATE ME!
 
 # Clone and install the openvla repo
 git clone https://github.com/openvla/openvla.git
@@ -79,10 +80,27 @@ pip install -e .
 
 cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
+
+pip install gradio mbodied mediapy
 ```
+
+TODO: update this commented part after getting it working in Ubuntu
+<!-- You may see this error. You can ignore it.
+```bash
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow-macos 2.15.0 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3, but you have protobuf 5.29.4 which is incompatible.
+```
+
+Follow these steps to install the simpler_env package, for the gradio simulation:
+1. https://github.com/simpler-env/SimplerEnv?tab=readme-ov-file#installation
+1. may need to pip install sapien: https://sapien.ucsd.edu/docs/latest/tutorial/basic/installation.html  -->
 
 ## 🚀 3. Inference
 ### Gradio App
+```bash
+conda activate pickagent
+```
+
 Run the Gradio app for inference:
 ```python
    python3 gradio_demo.py
