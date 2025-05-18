@@ -49,7 +49,7 @@ OpenVLA is a open-source Vision-Language-Action (VLA) model with 7 billion param
 
 
 ## 🔧 2. Installation
-NOTE: One of the dependencies, SAPIEN, is not available for Mac OS. Please use Ubuntu or another supported OS.
+NOTE: Some of the dependencies, simpler-env + ManiSkill2_real2sim + SAPIEN, are not available for Mac OS and also require a nVIDA GPU. Work in progress to migrate this to mujoco
 
 ```bash
 # Create and activate conda environment
@@ -81,19 +81,8 @@ pip install -e .
 cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
 
-pip install gradio mbodied mediapy transformers tensorflow
+pip install gradio mbodied mediapy transformers tensorflow timm
 ```
-
-TODO: update this commented part after getting it working in Ubuntu
-<!-- You may see this error. You can ignore it.
-```bash
-ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-tensorflow-macos 2.15.0 requires protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3, but you have protobuf 5.29.4 which is incompatible.
-```
-
-Follow these steps to install the simpler_env package, for the gradio simulation:
-1. https://github.com/simpler-env/SimplerEnv?tab=readme-ov-file#installation
-1. may need to pip install sapien: https://sapien.ucsd.edu/docs/latest/tutorial/basic/installation.html  -->
 
 ## 🚀 3. Inference
 ### Gradio App

@@ -3,11 +3,11 @@ from openvla import OpenVLA
 from PIL import Image
 import numpy as np
 import os
-import simpler_env
+#import simpler_env
 import mediapy
-import sapien.core as sapien
+#import sapien.core as sapien
 from mbodied.robots import Robot
-from simpler_env.utils.env.observation_utils import get_image_from_maniskill2_obs_dict
+#from simpler_env.utils.env.observation_utils import get_image_from_maniskill2_obs_dict
 from robot_utils import (
     get_libero_env,
     GenerateConfig,
