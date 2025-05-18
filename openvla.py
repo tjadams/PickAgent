@@ -8,7 +8,8 @@ import tensorflow as tf
 import numpy as np
 
 class OpenVLA:
-    def __init__(self, model_name="openvla/openvla-7b-finetuned-libero-object", device="cuda:0"):
+    # "cuda:0" device for nvidia, mps for mac, cpu for ubuntu vm on mac
+    def __init__(self, model_name="openvla/openvla-7b-finetuned-libero-object", device="mps"):
         """
         Initialize the Open VLA model  
         """
@@ -17,7 +18,7 @@ class OpenVLA:
         
         self.model = AutoModelForVision2Seq.from_pretrained(
             model_name,
-            attn_implementation="flash_attention_2",
+            #attn_implementation="flash_attention_2",
             torch_dtype=torch.bfloat16,
             low_cpu_mem_usage=True,
             trust_remote_code=True

@@ -81,7 +81,7 @@ pip install -e .
 cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
 
-pip install gradio mbodied mediapy transformers tensorflow timm
+pip install gradio mbodied mediapy transformers tensorflow timm==0.9.10
 ```
 
 ## 🚀 3. Inference
