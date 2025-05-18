@@ -19,7 +19,9 @@ class OpenVLA:
         self.model = AutoModelForVision2Seq.from_pretrained(
             model_name,
             #attn_implementation="flash_attention_2",
-            torch_dtype=torch.bfloat16,
+            #torch.bfloat16 not supported on mps
+            #torch_dtype=torch.bfloat16,
+            torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
             trust_remote_code=True
         ).to(device)
@@ -56,7 +58,9 @@ class OpenVLA:
         prompt = f"In: What action should the robot take to {prompt.lower()}?\nOut:"
 
         # Process inputs.
-        inputs = self.processor(prompt, image).to(self.device, dtype=torch.bfloat16)
+        # torch.bfloat16 not supported on mps
+        #inputs = self.processor(prompt, image).to(self.device, dtype=torch.bfloat16)
+        inputs = self.processor(prompt, image).to(self.device, dtype=torch.float16)
 
         # Get action.
         action = self.model.predict_action(**inputs, unnorm_key=unnorm_key, do_sample=False)
