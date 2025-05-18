@@ -81,7 +81,7 @@ pip install -e .
 cd openvla
 pip install -r experiments/robot/libero/libero_requirements.txt
 
-pip install gradio mbodied mediapy
+pip install gradio mbodied mediapy transformers tensorflow
 ```
 
 TODO: update this commented part after getting it working in Ubuntu
